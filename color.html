@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color selector</title>
+</head>
+<link rel="stylesheet" href="./color.css">
+<body>
+    <div class="container">
+<h2>Square Box</h2>
+ <div class="box" id="squareBox">
+    <p>No of Boxes: </p>
+    <h3 id="counter"></h3>
+    </div>
+    <div class="boxColorsWrapper">
+           <select class="boxColors" id="squareColors" onchange="colorSelector()">
+                 <option value="">Select a color</option>
+                 <option value="red">Red</option>
+                 <option value="teal">Teal</option>
+                 <option value="orange">Orange</option>
+                 <option value="blue">Blue</option>
+                 <option value="green">Green</option>
+                 <option value="purple">Purple</option>
+           </select>
+    </div>
+    <div class="boxColorsWrapper">
+        <button onclick="decrement()">-</button>
+        <button onclick="increment()">+</button>
+        <div class="boxColorsWrapper">
+            <button onclick="GetSummary()">Get Summary</button>
+          <p id="Summary"></p>
+        </div>
+    </div>
+    </div>
+    <script src="./color.js"></script>
+</body>
+</html>
