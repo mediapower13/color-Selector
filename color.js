@@ -35,3 +35,6 @@ function GetSummary() {
         summaryText.innerHTML = "There are " + counter + " " + color + " boxes"
     }
 }
+
+
+
